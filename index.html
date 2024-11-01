@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assests/images/Logo.svg" />
+    <title>Apex</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Font Awesome (Used for Social media links only) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+
+      <!-- NAVBAR -->
+      <div class="navbar flex align-center">
+
+        <!-- LOGO  -->
+        <a href="#" class="logo flex align-center">
+          <img src="./assests/images/Logo.svg" width="100px" alt="logo" />
+        </a>
+
+        <!-- MENU-OPTIONS CONTAINER AND ITEMS -->
+        <div class="menu flex" style="gap: 0.2rem">
+
+          <div class="menu-items flex align-center">
+            <a href="#" class="menu-item">Demos</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Blog</a>
+            <a href="#" class="menu-item">Pages</a>
+            <a href="#" class="menu-item">Contact</a>
+          </div>
+
+          <!-- CLOSE BUTTON (HIDDEN) -->
+          <span
+            class="material-symbols-rounded close_icon"
+            onclick="closeSidebar()"
+            >close
+          </span>
+
+        </div>
+
+        <!-- LOGIN AND SIGN-UP BUTTONS -->
+        <div class="nav-btns flex justify-center align-center">
+          <a href="#" class="login-btn btn flex justify-center align-center">Login</a>
+          <a href="#" class="getStarted-btn btn btn-hover flex align-center">Get Started Free</a>
+        </div>
+
+        <!-- MENU-BTN (HIDDEN)  -->
+        <div class="menu-btn">
+          <span class="material-symbols-rounded" onclick="openSidebar()"
+            >menu
+          </span>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- MAIN BODY SECTION -->
+    <main>
+
+      <!-- HERO SECTION  -->
+      <div class="hero-area align-center">
+
+        <!-- TEXT CONTENT -->
+        <div class="hero-content flex flex-column">
+          <h1 class="hero-heading"> <!-- we will remove br in responsive -->
+            Start chatting with <br />
+            customers, <br />
+            anytime, anywhere <br />
+            with Apex
+          </h1>
+          <p class="hero-paragraph">
+            Great software that allows you to chat from any <br />
+            place at any time without any interruption.
+          </p>
+          <!-- START CHAT BTN  -->
+          <div class="flex">  <!-- We doesn't need to add width manually-->
+            <a href="#" class="start-chat-btn btn btn-hover flex justify-center align-center">
+              <span>Start Chatting Now</span>
+              <span class="material-symbols-rounded" id="right-arrow-icon">arrow_right_alt</span>
+            </a>
+          </div>
+        </div>
+        <!-- HERO IMAGE  -->
+        <img
+          class="hero-image"
+          src="./assests/images/smilingWomen.svg"
+          alt="img"
+        />
+
+      </div>
+
+      <!-- FEATURES SECTION -->
+
+      <!-- FEATURE 1 -->
+      <div class="feature-1-container">
+        <h2 style="text-align: center">Features for a better experience</h2>
+
+        <!-- FEATURES CONTAINER  -->
+        <div class="feature-1 flex">
+          <!-- Feature 1 Item 1 -->
+          <div class="feature-1-item flex">
+            <img
+              class="feature-1-icon"
+              id="img-camera"
+              src="./assests/images/videocam.svg"
+              alt="icon"
+            />
+            <div class="feature-1-content">
+              <h3>Video messaging</h3>
+              <p>
+                This software is very easy for you to manage. You can use it as
+                you wish.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 1 Item 2 -->
+          <div class="feature-1-item flex">
+            <img
+              class="feature-1-icon"
+              id="img-stopwatch"
+              src="./assests/images/stopwatch.svg"
+              alt="icon"
+            />
+            <div class="feature-1-content">
+              <h3>Save your time</h3>
+              <p>
+                This software is very easy for you to manage. You can use it as
+                you wish.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 1 Item 3 -->
+          <div class="feature-1-item flex">
+            <img
+              class="feature-1-icon"
+              id="img-wifi"
+              src="./assests/images/wifi.svg"
+              alt="icon"
+            />
+            <div class="feature-1-content">
+              <h3>Keep safe & private</h3>
+              <p>
+                This software is very easy for you to manage. You can use it as
+                you wish.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <br /><br />
+
+      <!-- FEATURE 2 -->
+      <div class="feature-2-container align-center">
+        <!-- TEXT CONTENT  -->
+        <div class="feature-2-content">
+          <h1>Start selling directly inside conversations</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered all injected humour or randomised words
+            which don't look even slightly believable.
+          </p>
+        </div>
+
+        <!-- CHAT MESSAGE IMG -->
+        <img
+          class="feature-2-img feature-2-img"
+          src="./assests/images/chat_msg.svg"
+          alt="img"
+        />
+      </div>
+
+      <!-- FEATURE 3 -->
+      <div class="feature-3-container align-center">
+        <!-- CHAT MESSAGE IMG -->
+        <img
+          class="feature-3-img feature-3-img"
+          src="./assests/images/chat_msg.svg"
+          alt="img"
+        />
+
+        <!-- TEXT CONTENT  -->
+        <div class="feature-2_3-content">
+          <h1>Start selling directly inside conversations</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered all injected humour or randomised words
+            which don't look even slightly believable.
+          </p>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL OR REVIEW SECTION  -->
+
+      <div class="testimonial-area">
+        <h1 style="text-align: center">Our blessed client said about us 😍</h1>
+
+        <!-- TESTIMONIAL CONTAINER  -->
+        <div class="testimonial-container">
+
+          <!-- TESTIMONIAL CARD 1 -->
+
+            <div class="testimonial-card flex flex-column">
+
+              <!-- TESTIMONIAL CONTENT -->
+              <div class="testimonial-content">
+                <h3 style="text-align: center">"Incredible Experience"</h3>
+                <p style="margin-top: 1rem">
+                  We had an incredible experience working with Mixland and were
+                  impressed they made such a big difference in only three weeks.
+                  Our team is so grateful for the wonderful improvements they
+                  made and their ability to get familiar with the concept so
+                  quickly.
+                </p>
+              </div>
+
+              <!-- REVIEWER'S DETAILS CONTAINER -->
+              <div class="reviewer-container flex justify-center align-center">
+                <img
+                  class="reviewer-image"
+                  src="./assests/images/wadeWarren.svg"
+                  alt="img"
+                />
+                <div class="reviewer-details flex flex-column">
+                  <h4>Wade Warren</h4>
+                  <p>CEO, ABC Corporation</p>
+                </div>
+              </div>
+
+            </div>
+
+          <!-- TESTIMONIAL CARD 2 -->
+            <div class="testimonial-card odd flex flex-column">
+
+              <!-- TESTIMONIAL CONTENT -->
+              <div class="testimonial-content">
+                <h3 style="text-align: center">
+                  "Dependable, Responsive, Professional"
+                </h3>
+                <p style="margin-top: 1rem">
+                  Fermin Apps has collaborated with Mixland team for several
+                  projects such as Photo Sharing Apps and Custom Social
+                  Networking Apps. The experience has been pleasant,
+                  professional and exceeding our expectations. The team is
+                  always thinking beyond.
+                </p>
+              </div>
+              
+              <!-- REVIEWER'S DETAILS CONTAINER -->
+              <div class="reviewer-container flex justify-center align-center">
+                <img
+                  class="reviewer-image"
+                  src="./assests/images/estherHovard.svg"
+                  alt="img"
+                />
+                <div class="reviewer-details flex flex-column">
+                  <h4>Esther Howard</h4>
+                  <p>CEO, ABC Corporation</p>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER SECTION  -->
+    <footer>
+      <!-- CTA (Call to action) CONTAINER -->
+      <div class="cta-container">
+        <h1>
+          Ready to grow your business ? <br />
+          Start with Apex,become faster <br />
+          every second
+        </h1>
+        <!-- START CHAT BUTTON  -->
+        <div class="flex justify-center">
+          <a href="https://www.google.com" class="footer-chat-btn btn btn-hover"
+            >Start Chatting Now
+          </a>
+        </div>
+      </div>
+      
+      <!-- FOOTER NAVBAR CONTAINER -->
+      <div class="footer-nav-container">
+
+        <!-- Below Extra div Tag used for adding border 
+         below footer-nav -->
+        <div class="footer-nav flex align-center">
+
+          <!-- LOGO  -->
+          <a href="#" class="logo">
+            <img  
+              src="./assests/images/Logo.svg"
+              width="100px"
+              alt="logo"
+              style="vertical-align: middle"
+            />
+          </a>
+
+          <!-- MENU ITEMS  -->
+          <div class="footer-menu flex align-center">
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Features</a>
+            <a href="#" class="menu-item">Works</a>
+            <a href="#" class="menu-item">Support</a>
+          </div>
+
+          <!-- SOCIAL MEDIA LINKS  -->
+          <div class="social-links flex align-center">
+            <a href="https://www.x.com" target="_blank">
+              <i class="fa-brands fa-twitter socialMedia-icons"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f socialMedia-icons"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram socialMedia-icons"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+              <i class="fa-brands fa-github socialMedia-icons"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRIVACY POLICY AND TERMS & CONDITIONS -->
+      <div class="footer-legal container flex">
+        <div class="copyright">©️ Copyright, All Rights Reserved</div>
+        <div class="flex privacy-and-terms">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="./assests/js/theme.js"></script>
+  </body>
+</html>
